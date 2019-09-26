@@ -8,7 +8,7 @@ fn main() {
 
     /* this section could be replaced by a match*/
     if number_of_devices < 1 {
-        panic!("There is no rtlsdr device on this machine.");
+        panic!("There is no rtlsdr device plugged on this machine.");
     }
 
     if number_of_devices == 1 {
@@ -22,6 +22,14 @@ fn main() {
     let mut device_list: Vec<rtlsdr::RTLSDRDevice> = Vec::new();
 
     for i in 0..number_of_devices {
+
+        println!(
+            "Opening {} {}/{}",
+            rtlsdr::get_device_name(i),
+            i,
+            number_of_devices
+        );
+
         device_list.push(rtlsdr::open(i).unwrap());
     }
 
