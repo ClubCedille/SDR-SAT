@@ -8,4 +8,11 @@ This project has a goal to pull images from the weather satellites via the ATP p
 # Why ? 
 The hobbyist community seems to rely on a closed source & out of date software. Also, they rely on a key-generator to activate the license. This tiny quirk exists because the company the maintained the software no longer exists...
 
-# 
+# Necessary hardware
+* any rtlsdr usb dongle.
+
+# Target plateform
+* Raspberry/Linux
+* X86-64/Linux
+
+Libs are available out there.
