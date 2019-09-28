@@ -1,6 +1,8 @@
 COMPILER = cargo
 ARGS = build
 
+all: debug release doc
+
 debug: src/*
 	$(COMPILER) $(ARGS)
 

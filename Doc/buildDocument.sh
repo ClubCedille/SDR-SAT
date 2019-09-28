@@ -1,2 +1,2 @@
-pandoc -s -o Proposition.pdf Description.md RTLSDR.md Plateforme.md  
-
+echo "Proposition.pdf is beeing built"
+pandoc -s -o Doc/Proposition.pdf ./Doc/*.md
