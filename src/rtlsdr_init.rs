@@ -1,12 +1,11 @@
-
 use rtlsdr;
-use std::vec::Vec;
-use std::thread;
 use std::str;
-/**
+use std::thread;
+use std::vec::Vec;
+/*
  * Opens the USB devices.
  * Returns a vector with all the device handles in them
- * 
+ *
  */
 fn _get_devices() -> Result<Vec<rtlsdr::RTLSDRDevice>, &'static str> {
     /* Get the total number of rtlsdr devices on the local machine */
@@ -28,7 +27,6 @@ fn _get_devices() -> Result<Vec<rtlsdr::RTLSDRDevice>, &'static str> {
     let mut device_list: Vec<rtlsdr::RTLSDRDevice> = Vec::new();
 
     for i in 0..number_of_devices {
-
         println!(
             "Opening {} {}/{}",
             rtlsdr::get_device_name(i),
@@ -59,12 +57,9 @@ fn _get_descriptors() -> Result<Vec<rtlsdr::USBStrings>, &'static str> {
     Ok(_info_list)
 }
 
-pub fn init() -> Result<    (Vec<rtlsdr::RTLSDRDevice>, 
-                            Vec<rtlsdr::USBStrings>), 
-                            &'static str > 
-{
+pub fn init() -> Result<(Vec<rtlsdr::RTLSDRDevice>, Vec<rtlsdr::USBStrings>), &'static str> {
+    /* Get the total number of devices */
 
-    /* Get the total number of devices */ 
     let number_of_devices = rtlsdr::get_device_count();
     /* Fail if no devices were found */
     if number_of_devices < 1 {
@@ -76,6 +71,4 @@ pub fn init() -> Result<    (Vec<rtlsdr::RTLSDRDevice>,
         _get_devices().unwrap(),
         info_thread_handle.join().unwrap().unwrap(),
     ))
-
-
 }

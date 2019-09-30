@@ -2,7 +2,7 @@
 
 # Dependencies
 * Dependant on the crate rtlsdr v0.1.4
-* Dependant on the C lib "rtlsdr" & "rtlsdr-dev"
+* Dependant on the C lib "rtlsdr" & "rtlsdr-dev". That library is available from the [osmocom organisation](https://github.com/osmocom/rtl-sdr)
 
 # What ?
 This project has a goal to pull images from the weather satellites via the ATP protocol. 
@@ -28,8 +28,11 @@ Libs are available out there.
 
 * Clone the repo.
 
-* Do your changes.
+* Do your changes. Document them.
 
-* Simply hit me up with a pull request. If you are a member of the Cédille club, I assume we talked about that pull request beforehand and there shouldn't be any problem.
+* Simply hit me up with a pull request. Justify it by linking with any thread in the issues section. If there aren't any create one !
 
-* Be sure to do a rustfmt before pull request.
+* If you are a member of the Cédille club, I assume we talked about that pull request beforehand and there shouldn't be any problem.
+
+* Be sure to do a rustfmt before pull request. 
+
