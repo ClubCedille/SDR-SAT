@@ -30,9 +30,9 @@ Libs are available out there.
 
 * Do your changes. Document them.
 
-* Simply hit me up with a pull request. Justify it by linking with any thread in the issues section. If there aren't any create one !
+* Simply hit me up with a pull request. Justify it by linking with any thread in the issues section. If there aren't any create one!
 
-* If you are a member of the Cédille club, I assume we talked about that pull request beforehand and there shouldn't be any problem.
+* If you are a member of [CEDILLE](https://cedille.etsmtl.ca/), I assume we talked about that pull request beforehand and there shouldn't be any problem.
 
 * Be sure to do a rustfmt before pull request. 
 
